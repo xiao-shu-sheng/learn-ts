@@ -1,0 +1,18 @@
+# ts学习记录(mac)
+
+## 项目按照学习记录来一点点记录
+
+## 安装node环境、然后使用npm全局安装typescriipt: npm i typescript -g 
+
+## 输入tsc --version查看是否安装成功
+
+## 使用tsc --watch o1.ts 来监听01.ts文件，这时候会生成01.js, 使用node 01.js运行
+
+## 01中遇到不能将类型“undefined”分配给类型“null”时执行tsc --init生成tsconfig.json然后将strict改为false
+
+## 以上命令太麻烦，全局安装ts-node: npm i ts-node -g安装太慢的话可以安装一个源切换库npm i xmz -g
+
+## 然后使用mmp ls 查看源； 使用mmp use 切换源； 然后重新执行npm i ts-node -g； 接着执行 npm init -y生成package.json文件
+
+## 接着安装声明文件npm i @types/node -D,接着执行ts-node 01.ts就会有对应的打印
+
