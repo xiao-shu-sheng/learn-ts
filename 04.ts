@@ -11,6 +11,7 @@ interface Axx extends C {
     readonly id: string | number // 只读，不能修改
     readonly cb: (name: string) => boolean  // 只读的
 }
+
 // 重名重合
 interface Axx {
     sex?: boolean //属性可选
