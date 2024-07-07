@@ -23,7 +23,7 @@
 
     /* Language and Environment */
     // 目标语言版本
-    "target": "ES6",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "es2016",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     // ts需要引用的库，即声明文件，es5默认引用dom、es5、scripthost
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
@@ -145,6 +145,11 @@
   "include": [
     "src"
   ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
   // 指定一个排除列表(include的反向操作)
   // "exclude": []
   // 指定那些文件该使用配置(属于手动一个一个指定文件)
