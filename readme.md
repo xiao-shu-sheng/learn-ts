@@ -27,3 +27,4 @@
 #### 25.ts Reflect proxy
 #### 26.ts 类型守卫
 #### 27.ts 泛型工具
+#### 28.ts infer关键字
