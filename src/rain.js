@@ -57,11 +57,23 @@ var drawPerson = function (x, y, headColor, bodyColor, armColor, footColor) {
 };
 var drawHeart = function (x, y) {
     // 绘制爱心的函数
+    // 绘制爱心的函数
     ctx.fillStyle = 'red';
     ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.bezierCurveTo(x - 30, y - 30, x - 30, y + 30, x, y + 30);
-    ctx.bezierCurveTo(x + 30, y + 30, x + 30, y - 30, x, y);
+    const topCurveHeight = size * 0.3;
+    ctx.moveTo(x, y + topCurveHeight);
+    // 左半边
+    ctx.bezierCurveTo(
+        x - size / 2, y - topCurveHeight,
+        x - size, y + topCurveHeight / 2,
+        x, y + size
+    );
+    // 右半边
+    ctx.bezierCurveTo(
+        x + size, y + topCurveHeight / 2,
+        x + size / 2, y - topCurveHeight,
+        x, y + topCurveHeight
+    );
     ctx.fill();
 };
 // 初始化小人的位置
