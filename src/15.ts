@@ -58,6 +58,27 @@ Reflect.ownKeys(objSym).forEach(key => {
     console.log(key)
 })
 
+// 用于判断对象是否具有某个属性（无论是在对象自身还是其原型链上），可以获取到Symbols属性
+Reflect.has(objSym, sy1)
+
+// 用于检查对象自身（不包括原型链上）是否包含某个属性或方法，
+//asOwnProperty 只适用于字符串键的属性，而不适用于 Symbol 类型的键
+objSym.hasOwnProperty(sy1)
+
+// Object.prototype.propertyIsEnumerable: 检查对象的某个属性是否为自身属性且是可枚举的
+objSym.propertyIsEnumerable(sy1)
+
+
+// Object.hasOwnES2022 引入,用于判断对象是否直接拥有某个属性，类似 hasOwnProperty，但不受原型链上的同名方法影响
+// Object.hasOwn(objSym, sy1)
+
+// 直接访问
+objSym[sy1] !== undefined
+
+
+
+
+
 //生成器写法
 function* gen() {
     yield "天明" // 返回可以是同步也可以是异步
