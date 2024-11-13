@@ -5,6 +5,28 @@
 // 4.number string boolean
 // 5.never
 
+/**
+ * 基本类型
+ * Number; String; Boolean; Null; Undefined; Symbol; BigInt
+ * 对象类型 Object; Array; Map/Set/WeakMap/WeakSet
+ * 枚举类型 Enum
+ * 函数类型 Function; Function（普通函数类型; 匿名函数和箭头函数类型
+ * 高级类型
+ * Union（联合类型，如 number | string）
+ * Intersection（交叉类型，如 A & B）
+ * Tuple（元组类型）
+ * Type Alias（类型别名，用 type 定义）
+ * Interface（接口类型，用 interface 定义）
+ * Class（类类型）
+ * Type Guard（类型守卫，用于缩小类型范围的逻辑）
+ * Literal（字面量类型）
+ * 特殊类型
+ * Any(任意类型) Unknown(未知类型) Never(永远不存在的类型) Void（没有任何返回值）
+ * 工具类型
+ * Partial<T> / Required<T> / Readonly<T> 等常见工具类型
+ */
+
+
 let a:any = 10; // 任意类型ts不校验,可以赋值任意类型
 a = 'hello';
 a = 1;
