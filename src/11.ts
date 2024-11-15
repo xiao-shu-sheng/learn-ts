@@ -36,5 +36,26 @@
     ]
 
     console.log(student[0][0]);
+
+
+    type Animal = {
+        types: string,
+        name: string,
+        age: number
+    }
+
+    let dogs: Array<Partial<Animal>> = [
+        {
+            types: '狮子狗',
+            name: '大黄',
+            age: 0.5,
+        },
+        {
+            types: '藏獒',
+            name: '胖墩',
+            age: 1,
+        },
+    ]
+    console.log('这条'+dogs[1].types+'叫'+dogs[1].name);
 }
 
