@@ -71,7 +71,8 @@ console.log(custommer.user)
 
 // 函数的重置
 let user2: number[] = [1, 2, 3]
-//函数的重载，它没有实体的
+
+//函数的重载，它没有实体的, 只是定义, 实现上用的是静态类型检查
 function findNum(id: number): number[] //如果传入了id就是单个查询
 function findNum(): number[] //如果没有传入id就是查询全部
 function findNum(add: number[]): number[] //如果传入了数组就做添加

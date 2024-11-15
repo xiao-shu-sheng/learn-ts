@@ -13,11 +13,11 @@ interface Arr{
 }
 let ary1:Array<Arr> = [
     {
-        name:'天明',
+        name:'阿强',
         age: 16,
         sex: true,
         hobby: [
-            '动漫', '做饭'
+            '动漫', '做饭', '睡觉', '雕刻', '弹古琴'
         ]
     }
 ]
