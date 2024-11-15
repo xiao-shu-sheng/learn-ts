@@ -14,7 +14,7 @@
  * 5、高级类型
  * Union（联合类型，如 number | string）
  * Intersection（交叉类型，如 A & B）
- * Tuple（元组类型）
+ * Tuple（元组类型）[number, string]
  * Type Alias（类型别名，用 type 定义）
  * Interface（接口类型，用 interface 定义）
  * Class（类类型）
