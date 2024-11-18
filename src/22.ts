@@ -5,8 +5,8 @@
 // 装饰器工程
 // import 'reflect-metedata'
 // axios
-import axios from 'axios'
-import 'reflect-metadata'
+// import axios from 'axios'
+// import 'reflect-metadata'
 /** 
 const Base:ClassDecorator = (target) => {
     // 有了构造函数就可以通过prototype来给它增加属性、方法
@@ -22,6 +22,7 @@ const Base:ClassDecorator = (target) => {
 // 如果想实现传参可以使用函数柯力化
 // 柯力化之前: function add(a, b){} 柯力化之后： function add(a) { function add1(b) {}}
 
+/**
 const Base = (name: string) => {
     // 有了构造函数就可以通过prototype来给它增加属性、方法
     const fn:ClassDecorator = (target) => {
@@ -82,6 +83,7 @@ const http = new Http() as any
 
 http.__fn()
 console.log(http.__name)
+*/
 
 // 使用Base(Htpp) 来代替 @Base 也是可以的
 
