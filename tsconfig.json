@@ -23,7 +23,7 @@
 
     /* Language and Environment */
     // 目标语言版本
-    "target": "es2016",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "ESNext",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     // ts需要引用的库，即声明文件，es5默认引用dom、es5、scripthost
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
